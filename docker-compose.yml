@@ -5,11 +5,11 @@ networks:
     external: true
 
 services:
-  github-test:
+  msa-gateway:
     image: fpeg/msa-gateway:latest
     restart: on-failure
     ports:
       - 9001:8080
     networks:
       msa-test-net:
-        ipv4_address: 172.31.0.2
+        ipv4_address: 172.31.1.2
